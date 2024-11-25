@@ -1,0 +1,1 @@
+start /min java -cp "bin;lib/*" koalinha.Koala
