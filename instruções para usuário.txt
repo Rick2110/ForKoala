@@ -1,0 +1,4 @@
+instruções para usuário.
+
+necessário ter compilador Java 22 ou 23
+para rodar a aplicação execute o ForKoala.bat apenas.
