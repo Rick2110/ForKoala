@@ -166,7 +166,7 @@ public class marcarHorario {
                                 frmKoalaApp.dispose();
                                 // Caso a opção seja "Não", realiza a inserção no banco com pagamento pendente
                                 String sql = "INSERT INTO mesas (usuario, mesa_num, data, horario, pagamento) VALUES (?, ?, ?, ?, ?)";
-                                try (Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/koalinha", "root", "");
+                                try (Connection conn = DriverManager.getConnection("jdbc:mysql://macfly.zapto.org:3306/koalinha", "root", "");
                                      PreparedStatement stmt = conn.prepareStatement(sql)) {
 
                                     stmt.setString(1, usuario);
