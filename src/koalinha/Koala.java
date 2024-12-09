@@ -135,7 +135,7 @@ public class Koala {
 		        String password = new String(passwordField.getPassword());//guarda o valor da senha em uma variavel
 		        
 		        //conecta ao banco de dados
-		        try (Connection conn = DriverManager.getConnection("jdbc:mysql://macfly.zapto.org:3306/koalinha", "root", "")) {
+		        try (Connection conn = DriverManager.getConnection("jdbc:mysql://sql10.freesqldatabase.com:3306/sql10750695", "root", "")) {
 		            String sql = "SELECT usuario, senha FROM cadastro WHERE usuario = ? AND senha = ?";
 		            
 		            try (PreparedStatement stmt = conn.prepareStatement(sql)) {
