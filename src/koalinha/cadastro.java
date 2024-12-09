@@ -286,7 +286,7 @@ public class cadastro {
 				    if (validarTelefone(telefone)) {
 				    	if (validarCPF(cpf)) {
 				    		if (validarSenha(senha)) {
-				    			try (Connection conn = DriverManager.getConnection("jdbc:mysql://macfly.zapto.org:3306/koalinha", "root", "")) {
+				    			try (Connection conn = DriverManager.getConnection("jdbc:mysql://sql10.freesqldatabase.com:3306/sql10750695", "sql10750695", "")) {
 				    				// Primeira consulta para verificar se o usuário, cpf ou email já existe
 				    				String sqlVerificacao = "SELECT usuario, cpf, email FROM cadastro WHERE usuario = ? OR cpf = ? OR email = ?";
 				    				try (PreparedStatement stmt = conn.prepareStatement(sqlVerificacao)) {
