@@ -81,7 +81,7 @@ public class suasReservas { // Declara a classe "suasReservas".
         frame.getContentPane().add(btnNewButton_1); // Adiciona o botão.
 
         // Conexão com o banco de dados para buscar reservas.
-        try (Connection conn = DriverManager.getConnection("jdbc:mysql://macfly.zapto.org:3306/koalinha", "root", "")) {
+        try (Connection conn = DriverManager.getConnection("jdbc:mysql://macfly.zapto.org:3306/sql10750695", "sql10750695", "FdsIjDECHi")) {
             String sql = "SELECT * FROM mesas WHERE usuario = ?"; // Consulta SQL para buscar reservas.
 
             try (PreparedStatement stmt = conn.prepareStatement(sql)) {
